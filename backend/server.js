@@ -32,13 +32,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // CORS setup – ensure FRONT_URL in .env matches your frontend URL.
-app.use(
-  cors({
-    origin: true,
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: true,
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+//   })
+// );
 
 // Serve static files from "uploads"
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
