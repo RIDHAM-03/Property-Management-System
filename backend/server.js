@@ -48,7 +48,7 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-app.use("/auth/login", authRoutes);
+app.use("/api/auth/login", authRoutes);
 app.use("/api/property", propertyRoutes);
 app.use("/api/renter", renterRoutes);
 app.use("/api/allocations", renterAllocationRoutes);
